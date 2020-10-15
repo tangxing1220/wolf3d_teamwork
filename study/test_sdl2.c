@@ -73,8 +73,8 @@ int		main(void)
 	SDL_SetRenderDrawColor(renderer, 255, 0, 0, 255);
 	key_event(renderer);
 	// releae resources
-	//	SDL_DestoryRenderer(renderer);
-	//	SDL_DestoryWindow(window);
+	SDL_DestroyRenderer(renderer);
+	SDL_DestroyWindow(window);
 	SDL_Quit();
 	return (0);
 }
